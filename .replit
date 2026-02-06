@@ -1,0 +1,9 @@
+run = "streamlit run app/draft_board.py --server.port 5000 --server.headless true --server.address 0.0.0.0"
+entrypoint = "app/draft_board.py"
+
+[deployment]
+run = ["sh", "-c", "streamlit run app/draft_board.py --server.port 5000 --server.headless true --server.address 0.0.0.0"]
+
+[[ports]]
+localPort = 5000
+externalPort = 80
